@@ -189,6 +189,7 @@ namespace XMLSolutionMatric.UI
             SaveListToXml();
             Delete();
             fillGrid();
+            DisableButtons();
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -196,6 +197,7 @@ namespace XMLSolutionMatric.UI
             if (MessageBox.Show("Do you want to Cancel UnSaved Data", "Cancel ?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 fillGrid();
+                DisableButtons();
             }
         }
 

@@ -23,7 +23,7 @@ namespace XMLSolutionMatrics.BLL.DTO
         public bool IsValid =>
             !string.IsNullOrWhiteSpace(FirstName) && !string.IsNullOrWhiteSpace(LastName)
             && !string.IsNullOrWhiteSpace(StreetName) && !string.IsNullOrWhiteSpace(PostalCode) &&
-            !string.IsNullOrWhiteSpace(HouseNumber) || !string.IsNullOrWhiteSpace(PostalCode)
+            !string.IsNullOrWhiteSpace(ApartmentNumber) || !string.IsNullOrWhiteSpace(PostalCode)
             && !string.IsNullOrWhiteSpace(PhoneNumber) || !Enum.TryParse<Town>(Town.ToString(), out var valid);
 
 
